@@ -8,11 +8,13 @@ Infer discrete spikes from probabilities: define helper functions
 """
 
 
+import os
+# Force use of keras 2 instead of keras 3 for compatibility with trained models
+os.environ["TF_USE_LEGACY_KERAS"] = "1"
 from scipy.ndimage.filters import gaussian_filter
 import scipy.ndimage as ndim
 from copy import deepcopy
 import numpy as np
-import os
 import scipy.io as sio
 
 from . import config

@@ -59,10 +59,6 @@
           # For matplotlib qtagg backend
           QT_QPA_PLATFORM = "xcb";
 
-
-          # Force use of keras 2 instead of keras 3 for compatibility with Cascade
-          TF_USE_LEGACY_KERAS = 1;
-
           # Make tensorflow be quiet about CPU optimization
           TF_CPP_MIN_LOG_LEVEL = 2;
 

@@ -1,5 +1,7 @@
 
 import os
+# Force use of keras 2 instead of keras 3 for compatibility with trained models
+os.environ["TF_USE_LEGACY_KERAS"] = "1"
 from pip._internal import main as pip
 
 config_template = """\

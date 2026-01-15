@@ -3,6 +3,9 @@
 """
 General checks to simplify jupyter notebooks and GUI
 """
+import os
+# Force use of keras 2 instead of keras 3 for compatibility with trained models
+os.environ["TF_USE_LEGACY_KERAS"] = "1"
 
 def check_packages():
     """ Wrapper for check_yaml and check_keras_version """

@@ -39,6 +39,8 @@ Keras is a high-level user interface for the deep learning framework TensorFlow.
 """
 
 import os
+# Force use of keras 2 instead of keras 3 for compatibility with trained models
+os.environ["TF_USE_LEGACY_KERAS"] = "1"
 import glob as glob
 import matplotlib.pyplot as plt
 

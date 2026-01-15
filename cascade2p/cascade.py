@@ -31,6 +31,8 @@ Additional functions in this file are used to navigate different models ('get_mo
 """
 
 import os
+# Force use of keras 2 instead of keras 3 for compatibility with trained models
+os.environ["TF_USE_LEGACY_KERAS"] = "1"
 import time
 import numpy as np
 import warnings
