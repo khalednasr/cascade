@@ -813,7 +813,7 @@ def get_model_paths(model_path):
 
     for model_path in all_models:
         try:
-            noise_level = int(re.findall("_NoiseLevel_(\d+)", model_path)[0])
+            noise_level = int(re.findall("_NoiseLevel_(\\d+)", model_path)[0])
         except:
             print("Error while processing the file with name: ", model_path)
             raise
